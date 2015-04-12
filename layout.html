@@ -1,61 +1,151 @@
-<!DOCTYPE html>
 <html>
 <body>
 
-  <p>
-    <b>This is a test.</b>
-  </p>
+<!-- Link to the CSS stylesheet 			-->
+<head>
+	<link rel="stylesheet" href="style.css">
+</head>
 
-  <table border="4" style="width:100%">
-    <tr>
-      <th>  </th>
-      <th>Chicken</th>
-      <th>Pork</th>
-      <th>Beef</th>
-      <th>Turkey</th>
-      <th>Tofu</th>
-    </tr>
-    <tr>
-      <th>Monday</th>
-      <td>col2</td>
-      <td>col3</td>
-      <td>col4</td>
-      <td>col5</td>
-      <td>col6</td>
-    </tr>
-    <tr>
-      <th>Tuesday</th>
-      <td>col2</td>
-      <td>col3</td>
-      <td>col4</td>
-      <td>col5</td>
-      <td>col6</td>
-    </tr>
-    <tr>
-      <th>Wednesday</th>
-      <td>col2</td>
-      <td>col3</td>
-      <td>col4</td>
-      <td>col5</td>
-      <td>col6</td>
-    </tr>
-    <tr>
-      <th>Thursday</th>
-      <td>col2</td>
-      <td>col3</td>
-      <td>col4</td>
-      <td>col5</td>
-      <td>col6</td>
-    </tr>
-    <tr>
-      <th>Friday</th>
-      <td>col2</td>
-      <td>col3</td>
-      <td>col4</td>
-      <td>col5</td>
-      <td>col6</td>
-    </tr>
+<!-- 6x6 table, caption, footer, word and background color, etc		-->
+  <table>
+	<caption>How often I cook proteins for dinner (during the school week)</caption>
+	<thead>
+		<tr>
+		  <th>  </th>
+		  <th>Chicken</th>
+		  <th>Pork</th>
+		  <th>Beef</th>
+		  <th>Turkey</th>
+		  <th>Tofu</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+		  <th>Monday</th>
+		  <td>50%</td>
+		  <td>10%</td>
+		  <td>30%</td>
+		  <td>10%</td>
+		  <td>0%</td>
+		</tr>
+		<tr>
+		  <th>Tuesday</th>
+		  <td>25%</td>
+		  <td>20%</td>
+		  <td>30%</td>
+		  <td>20%</td>
+		  <td>5%</td>
+		</tr>
+		<tr>
+		  <th>Wednesday</th>
+		  <td>45%</td>
+		  <td>10%</td>
+		  <td>10%</td>
+		  <td>30%</td>
+		  <td>5%</td>
+		</tr>
+		<tr>
+		  <th>Thursday</th>
+		  <td>20%</td>
+		  <td>20%</td>
+		  <td>25%</td>
+		  <td>30%</td>
+		  <td>5%</td>
+		</tr>
+		<tr>
+		  <th>Friday</th>
+		  <td>30%</td>
+		  <td>30%</td>
+		  <td>30%</td>
+		  <td>10%</td>
+		  <td>0%</td>
+		</tr>
+	<tbody>
+	<tfoot>
+		<tr>
+			<td colspan="2">Footer1</td>
+			<td colspan="4">Footer2</td>
+		<tr>
+	</tfoot>
   </table>
-  
+
+<!-- The three part dl list with purple hover	-->  
+  <dl>
+	<dt>Black Coffee</dt>
+	<dd>Meeeh, not my favorite</dd>
+	<dt>French Roast</dt>
+	<dd>A little too bitter in my young blood</dd>
+	<dt>Breakfast Blend</dt>
+	<dd>Now that's a nice cup 'o joe</dd>
+  </dl>
+
+<!-- Form using the GET method 					-->  
+<br>This is the GET form... <br>
+  <form action="http://web.engr.oregonstate.edu/~osterbit/2/repo/class-content/form_tests/Formtest.php" method="GET"><br>
+	Text Input: <input type="text" name="text_input"> <br>
+	Number Input: <input type="number" name="numerical_input"> <br>
+	Password: <input type="password" name="password_input"> <br>
+	<br>
+	<input type="radio" name="candy" value="snickers"> Snickers<br>
+	<input type="radio" name="candy" value="skittles"> Skittles<br>
+	<input type="radio" name="candy" value="mentos"> Mentos<br>
+	<br>
+	<input type="submit" value="Submit"><br>
+ </form>
+ 
+<!-- Form using the POST method 				--> 
+This is the POST form... <br>
+  <form action="http://web.engr.oregonstate.edu/~osterbit/2/repo/class-content/form_tests/Formtest.php" method="POST"><br>
+	Text Input: <input type="text" name="text_input"> <br>
+	Number Input: <input type="number" name="numerical_input"> <br>
+	Password: <input type="password" name="password_input"> <br>
+	<br>
+	<input type="radio" name="candy" value="snickers"> Snickers<br>
+	<input type="radio" name="candy" value="skittles"> Skittles<br>
+	<input type="radio" name="candy" value="mentos"> Mentos<br>
+	<br>
+	<input type="submit" value="Submit"><br>
+ </form>
+ 
+ <!-- Use of DIV and CLASSES		 			-->
+ <div class='outer-content'><br>
+	<div class='inner-content'>
+	Inner Content
+	</div><br>
+ </div>
+ 
+ <!-- 2 Paragraphs and an image 				-->
+ <br>
+ <img src="wut.jpg" alt="Fear and Loathing" width="100 px" height="125 px">
+ 
+ "How long could we maintain? I wondered. How long until one of us starts raving and jabbering at this boy? What will 
+ he think then? This same lonely desert was the last known home of the Manson family; will he make that grim connection 
+ when my attorney starts screaming about bats and huge manta rays coming down on the car? If so, well, we'll just 
+ have to cut his head off and bury him somewhere, 'cause it goes without saying that we can't turn him loose. He'd report
+ us at once to some kind of outback Nazi law enforcement agency and they'll run us down like dogs. Jesus, did I say that?
+ Or just think it? Was I talking? Did they hear me?" <br><br>
+ "There was madness in any direction, at any hour. You could strike sparks anywhere. There was a fantastic universal 
+ sense that whatever we were doing was right, that we were winning. And that, I think, was the handle - that sense of 
+ inevitable victory over the forces of old and evil. Not in any mean or military sense; we didn't need that. Our energy 
+ would simply prevail. We had all the momentum; we were riding the crest of a high and beautiful wave. So now, 
+ less than five years later, you can go up on a steep hill in Las Vegas and look west, and with the right kind of 
+ eyes you can almost see the high-water mark - that place where the wave finally broke and rolled back." <br><br>
+ 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
